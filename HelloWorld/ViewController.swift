@@ -37,7 +37,7 @@ class ViewController: UIViewController {
     
     // And here are my Udemy MyFirstApp actions:
     @IBAction func enter(_ sender: Any) {
-        lebelText.text = textField.text
+        labelText.text = textField.text
     }
     @IBAction func show(_ sender: Any) {
     }
