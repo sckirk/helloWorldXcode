@@ -38,11 +38,18 @@ class ViewController: UIViewController {
     // And here are my Udemy MyFirstApp actions:
     @IBAction func enter(_ sender: Any) {
         labelText.text = textField.text
+        self.resignFirstResponder()
     }
     @IBAction func show(_ sender: Any) {
+        imageView.isHidden = false
     }
     @IBAction func hide(_ sender: Any) {
+        imageView.isHidden = true
     }
-    
+        
+ 
+
+
+
 }
 
