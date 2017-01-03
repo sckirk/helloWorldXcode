@@ -9,8 +9,16 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    /* Here's a multi-line comment...
+     this is my "hello world" app outlet: */
     @IBOutlet var displayLabel: UILabel!
+    
+    // And here are my Udemy MyFirstApp outlets:
+    @IBOutlet var labelText: UILabel!
+    @IBOutlet var textField: UITextField!
+    @IBOutlet var imageView: UIImageView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,9 +30,19 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    // Again, "hello world" app action:
     @IBAction func saySomethingTapped(_ sender: UIButton) {
         displayLabel.text = "Hello World!"
     }
-
+    
+    // And here are my Udemy MyFirstApp actions:
+    @IBAction func enter(_ sender: Any) {
+        lebelText.text = textField.text
+    }
+    @IBAction func show(_ sender: Any) {
+    }
+    @IBAction func hide(_ sender: Any) {
+    }
+    
 }
 
